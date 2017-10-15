@@ -1,0 +1,25 @@
+#GNUPLOT Script - Plot number of firefighter units allocated per incident since 2015
+
+#Determine title
+set title "Montreal firefighter units allocated per incident since 2015"
+
+#Determine output is going to be a PNG file
+set terminal png
+
+#Determine output file
+set output 'do1.png'
+
+#Causes the first entry in each column to be used as a title for the corresponding plot.
+set key autotitle columnhead
+
+#Tells gnuplot that data fields in subsequent input files are separated by ","
+set datafile separator "," 
+
+#Remove X Axis
+unset xtics
+
+#Show figures using lines and points
+set style data linespoints
+
+#Plot column 11 of the specified file
+plot '../data/donneesouvertes-interventions-sim.csv' using 11
