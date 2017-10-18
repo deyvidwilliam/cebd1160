@@ -9,7 +9,7 @@ set ylabel "Number of incidents"
 #Limiting X axe to 30 for better visualization
 set xrange [0:30]
 
-# Each bar is half the (visual) width of its x-range.
+# Each bar is 70% the (visual) width of its x-range.
 set boxwidth 0.7 absolute
 set style fill solid 1 noborder
 

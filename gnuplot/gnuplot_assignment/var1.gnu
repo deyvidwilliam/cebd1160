@@ -6,10 +6,10 @@ set title "Frequency plot for firefighter units deployed per incident\n since 20
 set xlabel "Number of units deployed"
 set ylabel "Number of incidents"
 
-#Limiting X axe to 100 for better reading and interpretation
+#Limiting X axe to 30 for better reading and interpretation
 set xrange [0:30]
 
-# Each bar is half the (visual) width of its x-range.
+# Each bar is 70% the (visual) width of its x-range.
 set boxwidth 0.7 absolute
 set style fill solid 1 noborder
 
