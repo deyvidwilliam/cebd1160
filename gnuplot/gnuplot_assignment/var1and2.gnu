@@ -25,5 +25,5 @@ set key autotitle columnhead
 
 set datafile separator "," 
 
-plot '3interventions_casernes_distance_2015_2017.csv' using (rounded($11)):(1) smooth frequency with boxes linetype 2 title "Firefighter units deployed per incident", '3interventions_casernes_distance_2015_2017.csv' using (rounded($16)):(1) smooth frequency with boxes linetype 3 title "Distance between incident and fire station"
+plot '3interventions_casernes_distance_2015_2017.csv' using (rounded($11)):(1) smooth frequency with points linetype 1 title "Firefighter units deployed per incident", '3interventions_casernes_distance_2015_2017.csv' using (rounded($16)):(1) smooth frequency with points linetype 4 title "Distance between incident and fire station"
 
