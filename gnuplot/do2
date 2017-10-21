@@ -1,0 +1,24 @@
+#set key off
+#set border 3
+set terminal png
+
+# Add a vertical dotted line at x=0 to show centre (mean) of distribution.
+#set yzeroaxis
+
+# Each bar is half the (visual) width of its x-range.
+#set boxwidth 0.5 absolute
+set style fill solid 1.0 noborder
+
+set output 'do3.png' 
+
+bin_width = 20;
+
+bin_number(x) = floor(x/bin_width)
+
+rounded(x) = bin_width * ( bin_number(x) + 0.50 )
+
+set key autotitle columnhead
+
+set datafile separator "," 
+
+plot '../data/donneesouvertes-interventions-sim.csv' using (rounded($11)):(11) smooth frequency with boxes

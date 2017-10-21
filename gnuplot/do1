@@ -1,7 +1,7 @@
 #GNUPLOT Script - Plot number of firefighter units allocated per incident since 2015
 
 #Determine title
-set title "Montreal firefighter units allocated per incident since 2015"
+set title "Montreal firefighter units deployed per incident since 2015"
 
 #Determine output is going to be a PNG file
 set terminal png
@@ -22,4 +22,4 @@ unset xtics
 set style data linespoints
 
 #Plot column 11 of the specified file
-plot '../data/donneesouvertes-interventions-sim.csv' using 11
+plot '../data/3interventions_casernes_distance_2015_2017.csv' using 11 linetype 4  title "Number of units"
