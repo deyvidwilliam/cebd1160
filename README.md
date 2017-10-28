@@ -1,7 +1,7 @@
 # CEBD1160
 CEBD1160 - Introduction to Big Data Technology
 
-Repository structure<BR>
+<b>Repository structure</b><BR>
 /         - Main folder<BR>
 /data     - Data sources (CSVs and text files)<BR>
 /gnuplot  - Gnuplot scripts and plots<BR>
