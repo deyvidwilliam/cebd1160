@@ -1,4 +1,4 @@
-# cebd1160
+# CEBD1160
 CEBD1160 - Introduction to Big Data Technology
 
 Repository structure<BR>
