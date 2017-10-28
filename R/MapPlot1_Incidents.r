@@ -1,0 +1,8 @@
+#install.packages("ggmap")
+library(ggmap)
+mydata = read.csv("https://raw.githubusercontent.com/deyvidwilliam/cebd1160/master/data/3interventions_casernes_distance_2015_2017.csv")
+incidents = data.frame(mydata$incident_nbr, mydata$longitude, mydata$latitude)
+colnames(incidents) = c('incident','lon','lat')
+mtl = as.numeric(geocode("Island of Montreal"))
+MTLMap = ggmap(get_googlemap(center=mtl, scale=2, zoom=10), extent="normal")
+MTLMap + geom_point(aes(x=lon, y=lat), data=incidents, col="blue", alpha=0.5)
