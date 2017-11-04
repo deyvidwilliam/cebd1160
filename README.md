@@ -11,3 +11,24 @@ The dataset chosen to test the fonctionalities of R and Gnuplot was <i>Firefight
 /data     - Data sources (csv files)<BR>
 /gnuplot  - Gnuplot scripts, plots and datasets for testing purposes<BR>
 /gnuplot/gnuplot_assignment  - Gnuplot scripts and plots for 2 variables from the main dataset
+
+<h1>Setting up the Lab environment</h1><BR>
+<b>Gnuplot</b><BR>
+Using Linux, Gnuplot will be downloaded and installed if you issue the following command as root:
+  
+  ```
+apt-get install gnuplot
+  ```
+<BR>
+  
+<b>RStudio</b><BR>
+Using Docker, we can start a container with a stable release with RStudio server using the command:
+```
+docker run -t -p 80:80 -p 8004:8004 opencpu/rstudio
+```
+<BR>
+ Depending on which ports are mapped, you access via http://localhost/rstudio (username/password: opencpu)
+
+
+  
+  
