@@ -3,7 +3,7 @@
 Repository with scripts and plots created to accomplish the tasks proposed in the course CEBD1160 (Introduction to Big Data Technology)  of Concordia University.
 
 <b>Main Dataset</b><BR>
-The dataset chosen to tests the fonctionalities of R and Gnuplot was <i>Firefighter incidents in Montreal since 2015</i> available in the /data folder. The 2 variables analysed were "Number of firefighter united deployed per incident" and "Distance between incident and fire station".
+The dataset chosen to test the fonctionalities of R and Gnuplot was <i>Firefighter incidents in Montreal since 2015</i> available in the /data folder. The 2 variables analysed were "Number of firefighter united deployed per incident" and "Distance between incident and fire station".
 
 <b>Repository structure</b><BR>
 /          - Main folder<BR>
