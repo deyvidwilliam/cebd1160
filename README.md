@@ -1,6 +1,6 @@
-# About this repository
+# About the repository (CEBD1160)
 
-This repository contains scripts and plots created to accomplish the tasks proposed in the course CEBD1160 (Introduction to Big Data Technology)  of Concordia University.
+This repository contains scripts and plots created to accomplish the tasks proposed in the course CEBD1160 (Introduction to Big Data Technology) from Concordia University.
 
 <b>Dataset</b><BR>
 The dataset chosen to test the functionalities of R and Gnuplot contains <i>Firefighter incidents registered in Montreal since 2015</i> and is available in the /data folder. The dataset is the result of a merge of two others (Interventions des pompiers de Montréal and Casernes de pompiers sur l’île de Montréal), both publicly available at the portal Données Ouvertes [http://donnees.ville.montreal.qc.ca] maintained by the City of Montreal. The distance between the incident and fire station was included in the dataset after the comparison of latitude/longitude coordinates using geospatial functions from within MS SQL Server.
